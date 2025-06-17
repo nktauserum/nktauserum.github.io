@@ -7,7 +7,7 @@ const previewBox   = document.querySelector('.preview-container');
 const imgPreviewEl = document.getElementById('img_preview');
 const sendButton = document.getElementById('send-button');
 
-const base_api_path = 'http://46.8.233.74:4344/message';
+const base_api_path = 'https://auserum.duckdns.org:8443/message';
 
 fileBtn.addEventListener('click', e => {
     fileInput.click();

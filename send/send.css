@@ -96,3 +96,24 @@
     font-size: 1rem;
     font-style: italic;
 }
+
+.preview-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.img-preview {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 0.5rem;
+    object-fit: contain;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+#filename {
+    display: inline-block;    /* или block */
+    max-width: 15em;          /* подберите ширину под ~20 символов */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

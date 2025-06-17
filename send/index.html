@@ -37,6 +37,10 @@
 
             <input name="message" id="text" type="text" class="send-text" placeholder="type your message here...">
 
+            <div class="preview-container" style="display: none;">
+                <img id="img_preview" class="img-preview" alt="Preview" />
+            </div>
+
             <!-- Скрытый input -->
             <input name="file" type="file" id="file" class="send-image" style="display: none;">
 
@@ -80,7 +84,7 @@
                 </div>
 
                 <!-- Отправка формы -->
-                <button type="submit" class="btn send-button">
+                <button id="send-button" type="submit" class="btn send-button">
                     send
                 </button>
             </div>

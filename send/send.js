@@ -3,36 +3,52 @@ const fileBtn    = document.getElementById('file_btn');
 const fileInput  = document.getElementById('file');
 const fileNameEl = document.getElementById('filename');
 const clearBtn   = document.getElementById('clear_btn');
+const previewBox   = document.querySelector('.preview-container');
+const imgPreviewEl = document.getElementById('img_preview');
+const sendButton = document.getElementById('send-button');
 
 const base_api_path = 'http://localhost:4344/message';
 
-// Нажатие на иконку «прикрепить файл»
 fileBtn.addEventListener('click', e => {
     fileInput.click();
 });
 
-// Когда файл выбран — показываем имя и кнопку очистки
 fileInput.addEventListener('change', () => {
-    if (fileInput.files.length > 0) {
-        fileNameEl.textContent = fileInput.files[0].name;
+    const file = fileInput.files[0];
+
+    if (file) {
+        fileNameEl.textContent = file.name;
         clearBtn.style.display  = 'inline-block';
+
+        const objectUrl = URL.createObjectURL(file);
+        imgPreviewEl.src = objectUrl;
+        previewBox.style.display = 'block';
+
+        imgPreviewEl.onload = () => {
+            URL.revokeObjectURL(objectUrl);
+        };
     } else {
-        // если пользователь отменил выбор
         fileNameEl.textContent = '';
-        clearBtn.style.display  = 'none';
+        clearBtn.style.display   = 'none';
+        previewBox.style.display = 'none';
+        imgPreviewEl.src         = '';
     }
 });
 
-// Сброс выбора
 clearBtn.addEventListener('click', () => {
     fileInput.value        = '';
     fileNameEl.textContent = '';
     clearBtn.style.display = 'none';
+    previewBox.style.display = 'none';
+    imgPreviewEl.src = '';
 });
 
 // Отправка формы
 form.addEventListener('submit', async e => {
     e.preventDefault();
+    sendButton.disabled = true;
+    sendButton.textContent = 'sending...'
+    clearBtn.disabled = true;
 
     // Собираем данные
     const formData = new FormData(form);
@@ -64,5 +80,8 @@ form.addEventListener('submit', async e => {
     } catch (err) {
         console.error(err);
         alert('Произошла ошибка при отправке: ' + err.message);
+    } finally {
+        sendButton.textContent = 'send'
+        sendButton.disabled = false;
     }
 });

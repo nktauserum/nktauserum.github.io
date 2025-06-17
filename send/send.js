@@ -76,6 +76,7 @@ form.addEventListener('submit', async e => {
 
         //alert('Сообщение успешно отправлено!');
         form.reset();
+        clearBtn.disabled = false;
         clearBtn.click();
     } catch (err) {
         console.error(err);
@@ -83,5 +84,6 @@ form.addEventListener('submit', async e => {
     } finally {
         sendButton.textContent = 'send'
         sendButton.disabled = false;
+        clearBtn.disabled = false;
     }
 });

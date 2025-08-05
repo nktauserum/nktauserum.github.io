@@ -74,7 +74,6 @@ form.addEventListener('submit', async e => {
             alert('Ошибка от сервера: ' + (result.error || 'Unknown'));
         }
 
-        //alert('Сообщение успешно отправлено!');
         form.reset();
         clearBtn.disabled = false;
         clearBtn.click();

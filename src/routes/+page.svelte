@@ -6,7 +6,3 @@
 <Header />
 
 <PostList />
-
-<style>
-
-</style>

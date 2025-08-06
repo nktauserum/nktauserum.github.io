@@ -6,3 +6,9 @@ export interface Post {
     created_at: string,
     tags: string[],
 }
+
+export interface PostsResponse {
+  posts: Post[];
+  page: number;
+  limit: number;
+}

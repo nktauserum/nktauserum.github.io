@@ -6,6 +6,7 @@
     box-sizing: border-box;
 
     --link: #a9b665;
+    --link-secondary: #717a45;
 }
 
 html {

@@ -19,7 +19,7 @@
 
 		<div class="tags">
 			{#each popular_tags as tag}
-				<a href="/search?tag={tag}" class="tag">
+				<a href="/?tag={tag}" class="tag">
 					{tag}
 				</a>
 			{/each}

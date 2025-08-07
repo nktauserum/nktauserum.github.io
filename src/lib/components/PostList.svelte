@@ -75,7 +75,7 @@
 
 				<div class="tags">
 					{#each post.tags as tag}
-						<a href="/search?tag={tag}" class="tag">
+						<a href="/?tag={tag}" class="tag">
 							{tag}
 						</a>
 					{/each}

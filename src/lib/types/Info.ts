@@ -1,5 +1,5 @@
 export interface Info {
-    avatar: string,
-    name: string,
-    description: string
+	avatar: string;
+	name: string;
+	description: string;
 }

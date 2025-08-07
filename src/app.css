@@ -3,49 +3,49 @@
 @plugin '@tailwindcss/typography';
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 
-    --link: #a9b665;
-    --link-secondary: #717a45;
+	--link: #a9b665;
+	--link-secondary: #717a45;
 }
 
 html {
-    background-color: #22221d;
-    color: #d9d9d9;
+	background-color: #22221d;
+	color: #d9d9d9;
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
+	display: flex;
+	min-height: 100vh;
 }
 
 hr {
-    display: block;
-    margin: 2rem;
-    height: 1px;
-    background-color: #ffffff;
+	display: block;
+	margin: 2rem;
+	height: 1px;
+	background-color: #ffffff;
 }
 
 .container {
-    padding: 16px;
-    margin: 0 auto;
-    max-width: 800px;
-    line-height: 1.4;
-    overflow-x: hidden;
-    height: 100%;
+	padding: 16px;
+	margin: 0 auto;
+	max-width: 800px;
+	line-height: 1.4;
+	overflow-x: hidden;
+	height: 100%;
 }
 
 .card {
-display: flex;
+	display: flex;
 }
 
 .stack {
-    display: flex;
+	display: flex;
 }
 
 .portrait {
-    width: 10rem;
-    height: 10rem;
+	width: 10rem;
+	height: 10rem;
 
-    margin-right: 2rem;
+	margin-right: 2rem;
 }

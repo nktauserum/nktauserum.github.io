@@ -2,7 +2,8 @@
 	import type { PostsResponse } from '$lib/types/Post';
 	import type { Post } from '$lib/types/Post';
 	import { onMount } from 'svelte';
-	import { base } from "$app/paths";
+	import { base } from '$app/paths';
+	import Spinner from './Spinner.svelte';
 
 	export async function fetchPosts(page: number = 1, limit: number = 10): Promise<PostsResponse> {
 		const params = new URLSearchParams({
@@ -52,7 +53,7 @@
 
 <div class="list">
 	{#if loading}
-		<p>Загрузка...</p>
+		<Spinner />
 	{:else if error}
 		<p class="error">{error}</p>
 	{:else}

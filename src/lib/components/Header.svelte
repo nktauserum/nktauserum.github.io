@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Info } from '$lib/types/Info';
-	import { base } from "$app/paths";
+	import { base } from '$app/paths';
 
 	const info: Info = {
 		avatar: 'https://avatars.githubusercontent.com/u/145584656?v=4',

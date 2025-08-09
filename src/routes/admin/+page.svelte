@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import { base } from "$app/paths";
+	import { base } from '$app/paths';
 	import Protected from '$lib/components/Protected.svelte';
 
 	let title = '';
@@ -21,7 +21,7 @@
 
 			if (!res.ok) throw new Error('Login failed');
 			const result = await res.json();
-			goto({base} + `/articles?post=` + result.uuid);
+			goto({ base } + `/articles?post=` + result.uuid);
 		} catch (e: any) {
 			error = e.message;
 		}
@@ -48,28 +48,28 @@
 </svelte:head>
 
 <Protected>
-<div class="post-container block">
-	<form on:submit|preventDefault={createPost}>
-		<button type="submit" class="btn btn-submit">Опубликовать</button>
-		{#if error}
-			<p class="error">{error}</p>
-		{/if}
+	<div class="post-container block">
+		<form on:submit|preventDefault={createPost}>
+			<button type="submit" class="btn btn-submit">Опубликовать</button>
+			{#if error}
+				<p class="error">{error}</p>
+			{/if}
 
-		<input type="text" bind:value={title} placeholder="Заголовок" required />
+			<input type="text" bind:value={title} placeholder="Заголовок" required />
 
-		<textarea bind:value={description} placeholder="Описание" required class="description block"
-		></textarea>
+			<textarea bind:value={description} placeholder="Описание" required class="description block"
+			></textarea>
 
-		<textarea
-			bind:value={content}
-			bind:this={textareaEl}
-			on:input={autoResize}
-			placeholder="Текст поста"
-			required
-			class="content"
-		></textarea>
-	</form>
-</div>
+			<textarea
+				bind:value={content}
+				bind:this={textareaEl}
+				on:input={autoResize}
+				placeholder="Текст поста"
+				required
+				class="content"
+			></textarea>
+		</form>
+	</div>
 </Protected>
 
 <style>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Info } from '$lib/types/Info';
+	import { base } from "$app/paths";
 
 	const info: Info = {
 		avatar: 'https://avatars.githubusercontent.com/u/145584656?v=4',
@@ -19,7 +20,7 @@
 
 		<div class="tags">
 			{#each popular_tags as tag}
-				<a href="/?tag={tag}" class="tag">
+				<a href="{base}/?tag={tag}" class="tag">
 					{tag}
 				</a>
 			{/each}

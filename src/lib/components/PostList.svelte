@@ -2,6 +2,7 @@
 	import type { PostsResponse } from '$lib/types/Post';
 	import type { Post } from '$lib/types/Post';
 	import { onMount } from 'svelte';
+	import { base } from "$app/paths";
 
 	export async function fetchPosts(page: number = 1, limit: number = 10): Promise<PostsResponse> {
 		const params = new URLSearchParams({
@@ -57,7 +58,7 @@
 	{:else}
 		{#each posts as post}
 			<div class="list__item">
-				<a href="/articles?post={post.uuid}" class="title">
+				<a href="{base}/articles?post={post.uuid}" class="title">
 					{post.title}
 				</a>
 
@@ -75,7 +76,7 @@
 
 				<div class="tags">
 					{#each post.tags as tag}
-						<a href="/?tag={tag}" class="tag">
+						<a href="{base}/?tag={tag}" class="tag">
 							{tag}
 						</a>
 					{/each}

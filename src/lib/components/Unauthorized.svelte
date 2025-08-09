@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	function redirect() {
 		window.location.href = '/';
 	}
@@ -7,7 +8,7 @@
 <div class="unauthorized-frame" on:click={redirect}>
 	<div class="window" on:click|stopPropagation>
 		<div class="popup">
-			<img src="/images/unauthorized-access.jpg" alt="Unauthorized access" />
+			<img src="{base}/images/unauthorized-access.jpg" alt="Unauthorized access" />
 			<h1 class="text-2xl font-bold">Эй, дружок!</h1>
 			<div class="mt-1 text-lg">
 				Кажется, ты выбрал не тот эндпоинт. Вход для посетителей на главной странице.

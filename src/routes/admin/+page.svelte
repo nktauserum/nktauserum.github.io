@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import { json } from '@sveltejs/kit';
+	import { base } from "$app/paths";
 
 	let title = '';
 	let description = '';
@@ -20,7 +20,7 @@
 
 			if (!res.ok) throw new Error('Login failed');
 			const result = await res.json();
-			goto('/articles?post=' + result.uuid);
+			goto({base} + `/articles?post=` + result.uuid);
 		} catch (e: any) {
 			error = e.message;
 		}

@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { base } from "$app/paths";
+	import Protected from '$lib/components/Protected.svelte';
 
 	let title = '';
 	let description = '';
@@ -46,6 +47,7 @@
 	<title>Админка</title>
 </svelte:head>
 
+<Protected>
 <div class="post-container block">
 	<form on:submit|preventDefault={createPost}>
 		<button type="submit" class="btn btn-submit">Опубликовать</button>
@@ -68,6 +70,7 @@
 		></textarea>
 	</form>
 </div>
+</Protected>
 
 <style>
 	form {

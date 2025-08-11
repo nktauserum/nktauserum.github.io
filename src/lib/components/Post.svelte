@@ -1,62 +1,55 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import type { Post } from '$lib/types/Post';
+	import { fetchPost } from '$lib/post';
 
-	const props = $props();
-	const uuid: string = props.uuid;
-
-	async function fetchPost(uuid: string): Promise<Post> {
-		const res = await fetch(`http://localhost:8080/articles/${uuid}`, {
-			method: 'GET',
-			headers: {
-				'Content-Type': 'application/json'
-			}
-		});
-
-		if (!res.ok) {
-			const error = await res.json().catch(() => ({ message: res.statusText }));
-			throw new Error(error.message || `Ошибка ${res.status}`);
-		}
-
-		const data = (await res.json()) as Post;
-		return data;
-	}
-
-	let post = $state<Post | null>(null);
+	const { uuid } = $props();
+	let post: Post | undefined = $state();
 	let loading = $state(false);
-	let error: string | null = null;
+	let error: string | undefined = $state();
 
-	async function loadPosts() {
+	async function loadPost() {
 		loading = true;
-		error = null;
-
+		error = undefined;
 		try {
-			const fetched = await fetchPost(uuid);
-			post = fetched;
-		} catch (err) {
-			error = err instanceof Error ? err.message : String(err);
+			post = await fetchPost(uuid);
+		} catch (e) {
+			error = e instanceof Error ? e.message : String(e);
 		} finally {
 			loading = false;
 		}
 	}
 
-	onMount(loadPosts);
+	onMount(loadPost);
 </script>
 
 <svelte:head>
 	{#if post}
 		<title>{post.title}</title>
+		<meta name="description" content={post.description} />
 	{:else}
-		<title>loading...</title>
+		<title>Загрузка…</title>
 	{/if}
 </svelte:head>
 
-<div class="post">
+<div class="container mx-auto px-4 py-8 text-gray-900 dark:text-gray-100">
 	{#if loading}
-		Loading...
+		<div class="text-center text-gray-500 dark:text-gray-400">Загрузка статьи…</div>
+	{:else if error}
+		<div class="text-center text-red-600 dark:text-red-400">Ошибка: {error}</div>
 	{:else if post}
-		<h1 class="text-3xl font-bold">{post.title}</h1>
-		<hr />
-		<p>{post.content}</p>
+		<article class="mx-auto prose prose-lg dark:prose-invert">
+			<h1 class="mb-4 text-4xl font-extrabold">{post.title}</h1>
+			<p class="mb-6 text-xl text-gray-700 dark:text-gray-300">{post.description}</p>
+			<div class="text-base leading-relaxed text-gray-800 dark:text-gray-200">
+				{@html post.content}
+			</div>
+		</article>
 	{/if}
 </div>
+
+<style>
+	.container {
+		max-width: 800px;
+	}
+</style>

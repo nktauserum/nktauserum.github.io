@@ -1,1 +1,0 @@
-.spinner-container.svelte-e0ofq0{margin:0;height:30vh;display:flex;justify-content:center;align-items:center}.spinner.svelte-e0ofq0{width:50px;height:50px;border:4px solid rgba(0,0,0,.1);border-top-color:#333;border-radius:50%;animation:svelte-e0ofq0-spin 1s linear infinite}@keyframes svelte-e0ofq0-spin{to{transform:rotate(360deg)}}

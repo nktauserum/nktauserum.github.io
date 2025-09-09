@@ -16,13 +16,13 @@
 		</a>
 
 		<a
-			href="https://x.com/genzforfemboys"
+			href="https://bsky.app/profile/nktauserum.bsky.social"
 			class="aside__item"
 			rel="noopener noreferrer"
 			target="_blank"
 			aria-label="true"
 		>
-			<i class="bi bi-twitter" style="font-size: 1.875rem; color:rgb(255,255,255);"></i>
+			<i class="bi bi-bluesky" style="font-size: 1.875rem; color:rgb(255,255,255);"></i>
 		</a>
 
 		<a

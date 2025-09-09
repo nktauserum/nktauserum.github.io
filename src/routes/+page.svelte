@@ -4,6 +4,10 @@
 
 <Header />
 
+<svelte:head>
+	<title>nktauserum' homepage</title>
+</svelte:head>
+
 <div class="container">
 	<a class="block top" href="#todo">
 		<div class="markup">#</div>Todo

@@ -6,7 +6,7 @@
 
 	<div class="info">
 		<h1 class="name">Никита Архипов</h1>
-		<p class="description">Ищу себя в человеческом обществе. Не могу найти.</p>
+		<p class="description">Ищу себя. Не могу найти.</p>
 	</div>
 </header>
 

@@ -50,4 +50,13 @@
 		margin: 0;
 		color: var(--text-secondary);
 	}
+
+	@media screen and (max-width: 576px) {
+		header {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center !important;
+			text-align: center;
+		}
+	}
 </style>

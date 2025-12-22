@@ -7,10 +7,11 @@
 
 	--link: #a9b665;
 	--link-secondary: #717a45;
+	--bg-first:#22221d;
 }
 
 html {
-	background-color: #22221d;
+	background-color: var(--bg-first);
 	color: #d9d9d9;
 }
 

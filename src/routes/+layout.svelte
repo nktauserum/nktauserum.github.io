@@ -39,6 +39,15 @@
 
 <div class="container">
 	<slot />
+
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
+
 </div>
 
 <style>
@@ -46,10 +55,11 @@
 
 	@media screen and (max-width: 576px) {
 		.aside {
-			margin: 0;
+			margin: 0!important;
 			min-height: 3rem !important;
+			height: 5rem !important;
 			position: fixed !important;
-			top: 0;
+			bottom: 0;
 			left: 0;
 			width: 100%;
 			padding: 1rem 0;
@@ -58,19 +68,25 @@
 			justify-content: center;
 			align-items: center !important;
 			z-index: 1000;
+
+			background-color: var(--bg-first);
 		}
 
 		.aside__column {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			gap: 1.5rem;
+			gap: 3rem;
 		}
 
 		.aside__item {
 			font-size: 1.875rem;
 			color: #fff;
 			margin: 0;
+		}
+
+		.container {
+			margin-top: 4rem;
 		}
 	}
 

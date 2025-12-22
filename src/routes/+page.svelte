@@ -9,8 +9,9 @@
 </svelte:head>
 
 <div class="container">
-	<a id="todo" class="block top" href="#todo">
-		<div class="markup">#</div>Todo
+	<a id="todo" class="top block" href="#todo">
+		<div class="markup">#</div>
+		Todo
 	</a>
 </div>
 

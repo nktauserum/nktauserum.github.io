@@ -1,12 +1,17 @@
 <script lang="ts">
+	const info = {
+		avatar: 'https://avatars.githubusercontent.com/u/145584656?v=4',
+		name: 'Никита Архипов',
+		description: 'Описание профиля.'
+	};
 </script>
 
 <header>
 	<img src="https://avatars.githubusercontent.com/u/145584656?v=4" alt="avatar" class="avatar" />
 
 	<div class="info">
-		<h1 class="name">Никита Архипов</h1>
-		<p class="description">Ищу себя. Не могу найти.</p>
+		<h1 class="name">{info.name}</h1>
+		<p class="description">{info.description}</p>
 	</div>
 </header>
 

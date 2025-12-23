@@ -41,14 +41,16 @@
 <div class="list">
 	<ul class="track_list">
 		{#each tracks as track, i}
+			<!-- svelte-ignore a11y_no_static_element_interactions -->
+			<!-- svelte-ignore a11y_click_events_have_key_events -->
 			<li>
-				<div class="list__item results__item" aria-label="Play the track">
-					<button
-						onclick={() => {
+
+				<div class="list__item results__item" aria-label="Play the track" onclick={() => {
 							if (tracks) {
 								playerStore.play(tracks, i);
 							}
-						}}
+						}}>
+					<button
 						class="item__play"
 					>
 						<div class="item__cover-wrapper">
@@ -66,12 +68,14 @@
 							<p class="item__artist">{track.artist}</p>
 						</div>
 					</div>
-						<button
+						<a	
+							href="{track.audio_url}"
+							download={`${track.title} - ${track.artist}`}
 							class="item__add"
-							aria-label="tools"
+							aria-label="download"
 						>
-							d
-						</button>
+							<i class="bi bi-download" style="font-size: 1rem; color:rgb(255,255,255);"></i>
+						</a>
 				</div>
 			</li>
 		{/each}

@@ -12,7 +12,7 @@
 	}
 
 	onMount(async () => {
-		const res = await fetch('/static/list.json');
+		const res = await fetch('/list.json');
 		tracks = await res.json();
 	});
 </script>

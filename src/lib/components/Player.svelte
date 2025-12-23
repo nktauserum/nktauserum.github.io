@@ -204,7 +204,13 @@
 			>
 				{#if $playerStore.isPlaying}
 					<!-- Pause icon -->
-					<svg class="ctrl-play" color="var(--txt-first)" width="50" height="50" viewBox="0 0 16 16">
+					<svg
+						class="ctrl-play"
+						color="var(--txt-first)"
+						width="50"
+						height="50"
+						viewBox="0 0 16 16"
+					>
 						<path
 							fill="currentColor"
 							d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"
@@ -212,7 +218,13 @@
 					</svg>
 				{:else}
 					<!-- Play icon -->
-					<svg class="ctrl-play" color="var(--txt-first)" width="50" height="50" viewBox="0 0 16 16">
+					<svg
+						class="ctrl-play"
+						color="var(--txt-first)"
+						width="50"
+						height="50"
+						viewBox="0 0 16 16"
+					>
 						<path
 							fill="currentColor"
 							d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
@@ -347,6 +359,7 @@
 		border: 3px solid var(--bg-second);
 		border-top: 0;
 		border-radius: 0 0 10px 10px;
+		background: var(--bg-first);
 	}
 
 	.equalizer {
@@ -778,42 +791,43 @@
 			padding: 1rem;
 		}
 
-        .volume-section, .track__time {
-            display: none;
-        }
+		.volume-section,
+		.track__time {
+			display: none;
+		}
 
-        .controls {
-            gap: .2rem;
-        }
+		.controls {
+			gap: 0.2rem;
+		}
 
-        .ctrl-icon {
-            width: 25px;
-            height: 25px;
-        }
+		.ctrl-icon {
+			width: 25px;
+			height: 25px;
+		}
 
-        .ctrl-play {
-            width: 45px;
-            height: 45px;
-        }
+		.ctrl-play {
+			width: 45px;
+			height: 45px;
+		}
 
-        .track-section {
-            padding-left: 1rem;
-        }
+		.track-section {
+			padding-left: 1rem;
+		}
 
-        .track__info {
-            gap: .3rem;
-        }
+		.track__info {
+			gap: 0.3rem;
+		}
 
-        .info__title {
-            font-size: 16px!important;
-        }
+		.info__title {
+			font-size: 16px !important;
+		}
 
-        .info__artist {
-            font-size: 15px!important;
-        }
+		.info__artist {
+			font-size: 15px !important;
+		}
 
-        .player-content {
-            border: none;
-        }
+		.player-content {
+			border: none;
+		}
 	}
 </style>

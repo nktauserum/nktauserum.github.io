@@ -1,0 +1,254 @@
+[
+    {
+        "audio_url": "/static/audio/03 Океан Ельзи - Без бою.mp3",
+        "cover_url": "../static/images/03 Океан Ельзи - Без бою.jpg",
+        "title": "Без бою",
+        "artist": "Океан Ельзи"
+    },
+    {
+        "audio_url": "/static/audio/05 Radiohead - Let Down.mp3",
+        "cover_url": "../static/images/05 Radiohead - Let Down.jpg",
+        "title": "Let Down",
+        "artist": "Radiohead"
+    },
+    {
+        "audio_url": "/static/audio/05 Океан Ельзи - Ніколи.mp3",
+        "cover_url": "../static/images/05 Океан Ельзи - Ніколи.jpg",
+        "title": "Ніколи",
+        "artist": "Океан Ельзи"
+    },
+    {
+        "audio_url": "/static/audio/06 Frank Sinatra - My Way.mp3",
+        "cover_url": "../static/images/06 Frank Sinatra - My Way.jpg",
+        "title": "My Way",
+        "artist": "Frank Sinatra"
+    },
+    {
+        "audio_url": "/static/audio/09 Creedence Clearwater Revival - Fortunate Son.mp3",
+        "cover_url": "../static/images/09 Creedence Clearwater Revival - Fortunate Son.jpg",
+        "title": "Fortunate Son",
+        "artist": "Creedence Clearwater Revival"
+    },
+    {
+        "audio_url": "/static/audio/09 Placebo - The Bitter End.mp3",
+        "cover_url": "../static/images/09 Placebo - The Bitter End.jpg",
+        "title": "The Bitter End",
+        "artist": "Placebo"
+    },
+    {
+        "audio_url": "/static/audio/13 The Beatles - Hey Jude (Remastered 2009).mp3",
+        "cover_url": "../static/images/13 The Beatles - Hey Jude (Remastered 2009).jpg",
+        "title": "Hey Jude (Remastered 2009)",
+        "artist": "The Beatles"
+    },
+    {
+        "audio_url": "/static/audio/7линия - Наедине.mp3",
+        "cover_url": "../static/images/7линия - Наедине.jpg",
+        "title": "Наедине",
+        "artist": "7линия"
+    },
+    {
+        "audio_url": "/static/audio/Alexander Rybak - Fairytale.mp3",
+        "cover_url": "../static/images/Alexander Rybak - Fairytale.jpg",
+        "title": "Fairytale",
+        "artist": "Alexander Rybak"
+    },
+    {
+        "audio_url": "/static/audio/Animal ДжаZ - Три полоски.mp3",
+        "cover_url": "../static/images/Animal ДжаZ - Три полоски.jpg",
+        "title": "Три полоски",
+        "artist": "Animal ДжаZ"
+    },
+    {
+        "audio_url": "/static/audio/DISCOREZka - Простуда.mp3",
+        "cover_url": "../static/images/DISCOREZka - Простуда.jpg",
+        "title": "Простуда",
+        "artist": "DISCOREZka"
+    },
+    {
+        "audio_url": "/static/audio/Dibrova - З тобою.mp3",
+        "cover_url": "../static/images/Dibrova - З тобою.jpg",
+        "title": "З тобою",
+        "artist": "Dibrova"
+    },
+    {
+        "audio_url": "/static/audio/Morgenshtern - КРАСНЫЙ ФЛАГ.mp3",
+        "cover_url": "../static/images/Morgenshtern - КРАСНЫЙ ФЛАГ.jpg",
+        "title": "КРАСНЫЙ ФЛАГ",
+        "artist": "Morgenshtern"
+    },
+    {
+        "audio_url": "/static/audio/Noize MC - Голос   струны (Орфей).mp3",
+        "cover_url": "../static/images/Noize MC - Голос   струны (Орфей).jpg",
+        "title": "Голос & струны (Орфей)",
+        "artist": "Noize MC"
+    },
+    {
+        "audio_url": "/static/audio/Noize MC - Двадцатые годы.mp3",
+        "cover_url": "../static/images/Noize MC - Двадцатые годы.jpg",
+        "title": "Двадцатые годы",
+        "artist": "Noize MC"
+    },
+    {
+        "audio_url": "/static/audio/Noize MC - Марафон (Live).mp3",
+        "cover_url": "../static/images/Noize MC - Марафон (Live).jpg",
+        "title": "Марафон (Live)",
+        "artist": "Noize MC"
+    },
+    {
+        "audio_url": "/static/audio/Noize_MC_Сохрани_мою_речь_из_фильма_Сохрани_мою_речь_нав.mp3",
+        "cover_url": "../static/images/Noize_MC_Сохрани_мою_речь_из_фильма_Сохрани_мою_речь_нав.jpg",
+        "title": "Сохрани мою речь (из фильма «Сохрани мою речь навсегда»)",
+        "artist": "Noize MC"
+    },
+    {
+        "audio_url": "/static/audio/Plamenev - Девушка, крадущая сны.mp3",
+        "cover_url": "../static/images/Plamenev - Девушка, крадущая сны.jpg",
+        "title": "Девушка, крадущая сны",
+        "artist": "Plamenev"
+    },
+    {
+        "audio_url": "/static/audio/Plamenev - Солёный Ветер.mp3",
+        "cover_url": "../static/images/Plamenev - Солёный Ветер.jpg",
+        "title": "Солёный Ветер",
+        "artist": "Plamenev"
+    },
+    {
+        "audio_url": "/static/audio/Twenty One Pilots - Formidable.mp3",
+        "cover_url": "../static/images/Twenty One Pilots - Formidable.jpg",
+        "title": "Formidable",
+        "artist": "Twenty One Pilots"
+    },
+    {
+        "audio_url": "/static/audio/Tyrone Wells - In Between The Lines (Album Version).mp3",
+        "cover_url": "../static/images/Tyrone Wells - In Between The Lines (Album Version).jpg",
+        "title": "In Between The Lines (Album Version)",
+        "artist": "Tyrone Wells"
+    },
+    {
+        "audio_url": "/static/audio/YOASOBI - 夜に駆ける.mp3",
+        "cover_url": "../static/images/YOASOBI - 夜に駆ける.jpg",
+        "title": "夜に駆ける",
+        "artist": "YOASOBI"
+    },
+    {
+        "audio_url": "/static/audio/Yorushika - Sunny.mp3",
+        "cover_url": "../static/images/Yorushika - Sunny.jpg",
+        "title": "Sunny",
+        "artist": "Yorushika"
+    },
+    {
+        "audio_url": "/static/audio/Алекша Нович - Бабочки в горсти.mp3",
+        "cover_url": "../static/images/Алекша Нович - Бабочки в горсти.jpg",
+        "title": "Бабочки в горсти",
+        "artist": "Алекша Нович"
+    },
+    {
+        "audio_url": "/static/audio/Бонд с кнопкой - Кухни.mp3",
+        "cover_url": "../static/images/Бонд с кнопкой - Кухни.jpg",
+        "title": "Кухни",
+        "artist": "Бонд с кнопкой"
+    },
+    {
+        "audio_url": "/static/audio/Гражданская Оборона - Про любовь.mp3",
+        "cover_url": "../static/images/Гражданская Оборона - Про любовь.jpg",
+        "title": "Про любовь",
+        "artist": "Гражданская Оборона"
+    },
+    {
+        "audio_url": "/static/audio/ДДТ - Долго.mp3",
+        "cover_url": "../static/images/ДДТ - Долго.jpg",
+        "title": "Долго...",
+        "artist": "ДДТ"
+    },
+    {
+        "audio_url": "/static/audio/ДДТ - Песня о свободе.mp3",
+        "cover_url": "../static/images/ДДТ - Песня о свободе.jpg",
+        "title": "Песня о свободе",
+        "artist": "ДДТ"
+    },
+    {
+        "audio_url": "/static/audio/Йорш - Светлячки.mp3",
+        "cover_url": "../static/images/Йорш - Светлячки.jpg",
+        "title": "Светлячки",
+        "artist": "Йорш"
+    },
+    {
+        "audio_url": "/static/audio/Марко Поло - Ветер в волосах.mp3",
+        "cover_url": "../static/images/Марко Поло - Ветер в волосах.jpg",
+        "title": "Ветер в волосах",
+        "artist": "Марко Поло"
+    },
+    {
+        "audio_url": "/static/audio/Марко Поло - Дикая мята.mp3",
+        "cover_url": "../static/images/Марко Поло - Дикая мята.jpg",
+        "title": "Дикая мята",
+        "artist": "Марко Поло"
+    },
+    {
+        "audio_url": "/static/audio/Машина Времени - Улетай.mp3",
+        "cover_url": "../static/images/Машина Времени - Улетай.jpg",
+        "title": "Улетай",
+        "artist": "Машина Времени"
+    },
+    {
+        "audio_url": "/static/audio/Мельница - Дождь для нас.mp3",
+        "cover_url": "../static/images/Мельница - Дождь для нас.jpg",
+        "title": "Дождь для нас",
+        "artist": "Мельница"
+    },
+    {
+        "audio_url": "/static/audio/Мельница - Радость моя.mp3",
+        "cover_url": "../static/images/Мельница - Радость моя.jpg",
+        "title": "Радость моя",
+        "artist": "Мельница"
+    },
+    {
+        "audio_url": "/static/audio/Морфинизм Пыльцы - Коты.mp3",
+        "cover_url": "../static/images/Морфинизм Пыльцы - Коты.jpg",
+        "title": "Коты",
+        "artist": "Морфинизм Пыльцы"
+    },
+    {
+        "audio_url": "/static/audio/Мотор ролла - Жар птиця.mp3",
+        "cover_url": "../static/images/Мотор ролла - Жар птиця.jpg",
+        "title": "Жар птиця",
+        "artist": "Мотор'ролла"
+    },
+    {
+        "audio_url": "/static/audio/Моя дорогая - Песня фонарщика.mp3",
+        "cover_url": "../static/images/Моя дорогая - Песня фонарщика.jpg",
+        "title": "Песня фонарщика",
+        "artist": "Моя дорогая"
+    },
+    {
+        "audio_url": "/static/audio/Мэнсон Флетчер - Истории.mp3",
+        "cover_url": "../static/images/Мэнсон Флетчер - Истории.jpg",
+        "title": "Истории",
+        "artist": "Мэнсон Флетчер"
+    },
+    {
+        "audio_url": "/static/audio/О!нет - Не переживай.mp3",
+        "cover_url": "../static/images/О!нет - Не переживай.jpg",
+        "title": "Не переживай",
+        "artist": "О!нет"
+    },
+    {
+        "audio_url": "/static/audio/Райтер - Там, где всегда нас ждут.mp3",
+        "cover_url": "../static/images/Райтер - Там, где всегда нас ждут.jpg",
+        "title": "Там, где всегда нас ждут",
+        "artist": "Райтер"
+    },
+    {
+        "audio_url": "/static/audio/евгенияонегина_Питер_в_твоих_волосах.mp3",
+        "cover_url": "../static/images/евгенияонегина_Питер_в_твоих_волосах.jpg",
+        "title": "Питер в твоих волосах",
+        "artist": "евгенияонегина"
+    },
+    {
+        "audio_url": "/static/audio/секрет - Это Питер, детка!.mp3",
+        "cover_url": "../static/images/секрет - Это Питер, детка!.jpg",
+        "title": "Это Питер, детка!",
+        "artist": "секрет"
+    }
+]

@@ -16,7 +16,6 @@
 </header>
 
 <style>
-	
 	header {
 		display: flex;
 		gap: 3rem;

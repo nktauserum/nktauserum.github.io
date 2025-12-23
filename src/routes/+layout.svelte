@@ -43,9 +43,9 @@
 	<div class="children"><slot /></div>
 
 	{#if $playerStore.track}
-	<div class="player-reserved">
-		<Player />
-	</div>
+		<div class="player-reserved">
+			<Player />
+		</div>
 	{/if}
 </div>
 
@@ -71,7 +71,7 @@
 
 	@media screen and (max-width: 576px) {
 		.aside {
-			margin: 0!important;
+			margin: 0 !important;
 			min-height: 3rem !important;
 			height: 5rem !important;
 			position: fixed !important;

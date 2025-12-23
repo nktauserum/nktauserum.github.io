@@ -28,7 +28,15 @@
             artist: 'YOASOBI',
         },
     ];
+
+	function create_title(): string {
+		return $playerStore.track ? `✨ ${$playerStore.track.title} - ${$playerStore.track.artist}` : "✨ Новогодний плейлист ✨";
+	}
 </script>
+
+<svelte:head>
+	<title>{create_title()}</title>
+</svelte:head>
 
 <div class="list">
 	<ul class="track_list">

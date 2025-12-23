@@ -13,6 +13,8 @@
 		<div class="markup">#</div>
 		Todo
 	</a>
+
+	<a href="/gift-playlist">Playlist</a>
 </div>
 
 <style>

@@ -10,6 +10,18 @@
 	--bg-first:#22221d;
 }
 
+:root {
+    --bg-first: #222;
+    --bg-second: #333;
+    --bg-third: #373737;
+
+    --txt-first: #ddd;
+    --txt-second: #b3b3b3;
+
+    --accent-color: #ff7300;
+    --accent-color-second: #be5600;
+}
+
 html {
 	background-color: var(--bg-first);
 	color: #d9d9d9;

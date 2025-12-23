@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Player from '$lib/components/Player.svelte';
+	import { playerStore } from '$lib/store';
 	import '../app.css';
 	import 'bootstrap-icons/font/bootstrap-icons.css';
 </script>
@@ -38,20 +40,34 @@
 </aside>
 
 <div class="container">
-	<slot />
+	<div class="children"><slot /></div>
 
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque obcaecati corrupti omnis eaque debitis qui aut nisi, beatae quis incidunt quos commodi odit sint culpa soluta quibusdam? Quis, obcaecati.</p>
-
+	{#if $playerStore.track}
+	<div class="player-reserved">
+		<Player />
+	</div>
+	{/if}
 </div>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.children {
+		width: 100%;
+		height: 100%;
+	}
+
+	.player-reserved {
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}
 
 	@media screen and (max-width: 576px) {
 		.aside {
@@ -59,7 +75,7 @@
 			min-height: 3rem !important;
 			height: 5rem !important;
 			position: fixed !important;
-			bottom: 0;
+			top: 0;
 			left: 0;
 			width: 100%;
 			padding: 1rem 0;

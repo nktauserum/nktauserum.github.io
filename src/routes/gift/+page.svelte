@@ -45,23 +45,19 @@
 			<!-- svelte-ignore a11y_click_events_have_key_events -->
 			<li>
 
-				<div class="list__item results__item" aria-label="Play the track" onclick={() => {
+				<button class="list__item results__item" aria-label="Play the track" on:click={() => {
 							if (tracks) {
 								playerStore.play(tracks, i);
 							}
 						}}>
-					<button
-						class="item__play"
-					>
-						<div class="item__cover-wrapper">
-							<img src={track.cover_url} class="item__cover" alt="cover" />
-							<div class="item__overlay">
-								<svg class="item__play-icon" viewBox="0 0 24 24" fill="currentColor">
-									<path d="M8 5v14l11-7z" />
-								</svg>
-							</div>
+					<div class="item__cover-wrapper">
+						<img src={track.cover_url} class="item__cover" alt="cover" />
+						<div class="item__overlay">
+							<svg class="item__play-icon" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M8 5v14l11-7z" />
+							</svg>
 						</div>
-					</button>
+					</div>
 					<div class="item__info">
 						<div class="item__title">{track.title}</div>
 						<div class="item__artists">
@@ -73,10 +69,11 @@
 							download={`${track.title} - ${track.artist}`}
 							class="item__add"
 							aria-label="download"
+							on:click|stopPropagation
 						>
 							<i class="bi bi-download" style="font-size: 1rem; color:rgb(255,255,255);"></i>
 						</a>
-				</div>
+				</button>
 			</li>
 		{/each}
 	</ul>
@@ -103,6 +100,7 @@
 		outline: none;
 		text-align: start;
 		transition: background-color 0.2s ease;
+		gap: 1rem;
 	}
 
 	.list__item:hover {
